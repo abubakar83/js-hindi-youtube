@@ -27,8 +27,8 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 
 let someNumber = 33
 let stringNumber = String(33)
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
 
 
 
@@ -39,3 +39,31 @@ console.log(typeof stringNumber);
 
 // browser gives alot of values in string that's why we need coversion
 
+// ***************************************OPERATIONS*********************************
+let value = 3
+let negValue = -value
+// console.log(negValue);
+
+// console.log(2-2)
+// console.log(2+2)
+// console.log(3*2)
+// console.log(3**2)
+// console.log(2/2)
+// console.log(3%5)
+
+let str1 = "hello"
+let str2 = " Hites"
+let str3 = str1 + str2
+// console.log(str3)
+
+// console.log(1 + "2")
+// console.log("3" + 1)
+// console.log("1" + 2 + 3)
+// console.log(1 + 2 + '2')
+// console.log(true) // true
+// console.log(+true) // 1
+// console.log(Number(true)) // 1
+console.log(+'') // 0
+
+// let num1, num2, num3 
+// num1 = num2 = num3 = 2 + 2
