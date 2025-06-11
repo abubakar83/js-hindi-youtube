@@ -20,7 +20,8 @@ const bigNumber = 23432343543345n
 
 
 // Reference (Non primitive) 
-// Array, Objects, Functions
+// Array, Objects, Functions (if we use typeof function for non premitive data
+// type then result will be object and Null also return object data type)
 
 const hero = ["abc", "acd", "fcd"]
 const myData = {
@@ -28,3 +29,10 @@ const myData = {
     age: 24, 
     cell: +923439457595,
 }
+const myFunction = function () {
+    console.log("hello there")
+}
+myFunction()
+
+console.log(typeof bigNumber) // typeof is the function to know data type
+// any variable
