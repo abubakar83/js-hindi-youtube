@@ -38,9 +38,23 @@ const myFunction = function () {
 // any variable
 
 // ????????????????????????????????????????????
+
 // Stack (Primitive) (copy), Heap(Non-Primitive) (Reference)
+
+            // Stack Example 
 let myYoutube = "freeCodeCamp";
 let myYoutubeNew = myYoutube;
-console.log(myYoutubeNew)
+// console.log(myYoutubeNew)
 myYoutubeNew = "azadChaiWala"
-console.log(myYoutubeNew)
+// console.log(myYoutubeNew)
+
+        // Heap Example 
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}        
+let userTwo = userOne
+userTwo.email = "youtube@google.com";
+
+console.log(userOne.email)
+console.log(userTwo.email)
