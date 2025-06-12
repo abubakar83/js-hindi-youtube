@@ -14,7 +14,7 @@ let useEmail;
 const id = Symbol("123");
 const anotherId = Symbol('123') // it will not return same value of id and
 // anotherId values 
-console.log(id === anotherId)
+// console.log(id === anotherId)
 
 const bigNumber = 23432343543345n
 
@@ -32,7 +32,15 @@ const myData = {
 const myFunction = function () {
     console.log("hello there")
 }
-myFunction()
+// myFunction()
 
-console.log(typeof bigNumber) // typeof is the function to know data type
+// console.log(typeof bigNumber) // typeof is the function to know data type
 // any variable
+
+// ????????????????????????????????????????????
+// Stack (Primitive) (copy), Heap(Non-Primitive) (Reference)
+let myYoutube = "freeCodeCamp";
+let myYoutubeNew = myYoutube;
+console.log(myYoutubeNew)
+myYoutubeNew = "azadChaiWala"
+console.log(myYoutubeNew)
