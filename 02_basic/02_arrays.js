@@ -7,7 +7,7 @@ marvels_heros.push(dc_heros) //it push whole array in marvels_heors
 
 // console.log(marvels_heros[3][1])
 
-const allHeros = marvels_heros.concat(dc_heros)
+const allHeros = marvels_heros.concat(dc_heros) // returns new array with one format
 console.log(allHeros)
 
 const all_new_heros = [...marvels_heros, ...dc_heros]
