@@ -49,3 +49,16 @@ console.log(Object.values(tinderUser))
 console.log(Object.entries(tinderUser)) // return data type is array and make indiviual array for key, value pair
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn"))
+
+// Object destructuring
+
+const course = {
+    courseName: 'js in hindi',
+    price: '999',
+    courseInstructor: "abu bakar"
+}
+// course.courseInstructor 
+
+const {courseInstructor: instructor} = course
+// console.log(courseInstructor)
+console.log(instructor)
