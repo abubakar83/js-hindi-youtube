@@ -62,3 +62,19 @@ const course = {
 const {courseInstructor: instructor} = course
 // console.log(courseInstructor)
 console.log(instructor)
+
+// Jason data type
+// {
+//     "name": "abubaker",
+//     "courseName": "js in hindi",
+//     "price": "free"
+// }
+
+// [
+//     {},
+//     {},
+//     {},
+// ]
+
+// https://randomuser.me/
+// https://jsonformatter.org/
