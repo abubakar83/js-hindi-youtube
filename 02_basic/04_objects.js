@@ -26,3 +26,26 @@ const obj2 = {3: "c", 4: "d"}
 // const obj3 = Object.assign({}, obj1, obj2) //here object is optional but for target
 const obj3 = {...obj1, ...obj2}
 console.log(obj3)
+
+const users = [
+{
+    id: 1,
+    email: "h@gmail.com"
+},
+{
+    id: 2,
+    email: 'h@gmail.com'
+},
+{
+    id: 3,
+    email: "h@gmail.com"
+}
+]
+users[1].email
+console.log(tinderUser)
+
+console.log(Object.keys(tinderUser)) //return data types is array
+console.log(Object.values(tinderUser))
+console.log(Object.entries(tinderUser)) // return data type is array and make indiviual array for key, value pair
+
+console.log(tinderUser.hasOwnProperty("isLoggedIn"))
