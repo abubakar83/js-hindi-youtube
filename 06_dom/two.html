@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Relations</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parentValues = document.querySelector('.parent')
+    // console.log(parentValues)
+    const child = parentValues.children
+    // console.log(child[0])
+    // console.log(child[0].innerHTML)
+
+    for(let i = 0; i <=  child.length-1; i++){
+        console.log( child[i].innerHTML)
+    }
+    for(let i = 0; i <= child.length-1; i++){
+        console.log(child[i].innerHTML)
+    }
+    child[1].style.color = "red"
+    console.log(parentValues.firstElementChild)
+    console.log(parentValues.lastElementChild)
+
+    const dayOne = document.querySelector(".day")
+    console.log(dayOne)
+    console.log(dayOne.parentElement)
+    console.log(dayOne.nextElementSibling)
+
+    console.log("NODES: ", parentValues.childNodes )
+</script>
+</html>
