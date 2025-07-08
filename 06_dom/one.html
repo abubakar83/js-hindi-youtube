@@ -2,13 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   
     <title>Dom Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">DOM learnig on chai aur code </h1>
+<body class="bg-black">
+    <div>
+        <h1 style="color: rgb(25, 0, 255)" id="title" class="heading">DOM learnig on chai aur code <span>
+            text check
+        </span></h1>
         <p>Lorem ipsum dolor sit amet.</p>
+        <h2>hello there one</h2>
+        <h2>hello there two</h2>
+        <h2>hello there three</h2>
+        <input type="password" name="klj" id="her">
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
     </div>
 </body>
 </html>
+
+<!-- some DOM practise -->
+ <!-- document.getElementById("title")
+ const title = document.getElementById("title").id //'title'
+ document.getElementById("title").className  // "heading"
+ document.getElementById("title").getAttribute("id") // "title"
+ document.getElementById("title").getAttribute("class") // "heading"
+ document.getElementById("title").setAttrubute("class", "test") // it will overide existing class
+ document.getElementById("title").setAttribute("id", "hell fine") // also override existing id and create new id hell and fine
+  -->
+ <!-- for styling in DOM  -->
+  <!-- title.style.padding = "15px"
+  title.style.borderRadius = 15px
+  title.style.backgroundColor = 'red' -->
+
+<!-- for text in html tags -->
+ <!-- title.innerHTML // show all tags include in text. eg span  
+ title.textContent // show all content even if thye are hidden by css display proterty
+ title.innerText // shows those content, they are not hidden  -->
+
+<!-- more methods for selction of tags  -->
+ <!-- document.getElementsByClassName("heading")
+ document.querySelector("h2") // select only first one 
+ document.querySelector("#title")
+ document.querySelector(".heading")
+ document.querySelector("input") // input tag
+ document.querySelector("input['type=passward']") // select input with attribute 
+ document.querySelector('p:first-child')
+ const myUl = document.querySelector("ul")
+ myUl // check
+ const backColor = myUl.querySelector("li")
+ backColor // check
+ backColor.style.backgroundColor = 'green'
+ backColor.innerText
+ backColor.innerText = 'five'
+
+ const allLi = document.querySelectorAll("li") // it return node list in the form of array
+ allLi[1].style.color = "red"
+
+ allLi.forEach(function(li) {
+    li.style.color = "red"
+ }) 
+    nodelist treat as an arry but not accept all array properties like map, if we want to
+    treat as array first convert nodelist in array. Mostly we will use forEach method. 
+
+    document.getElementsByClassName("list-item") // it will return HTMLCollection which is
+    different from nodeList
+
+    const takeAllLists = document.getElementsByClassName("list-item")
+    const convertIntoArray = Array.from(takeAllLists)
+    convertIntoArray.forEach(function(li) => {
+    li.style.backgroundColor = "red"
+    })
+ -->
